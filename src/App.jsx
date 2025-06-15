@@ -8,7 +8,6 @@ import CompetitionScreen from './components/CompetitionScreen';
 import ARLauncher from './components/OrganSelector';
 import ARLearning from './components/LearningScreen';
 import ARQuiz from './components/QuizScreen';
-import PartyScreen from './components/PartyScreen';
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState('home');
