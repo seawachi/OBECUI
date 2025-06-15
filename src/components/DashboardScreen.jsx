@@ -6,7 +6,7 @@ export default function DashboardScreen({ setCurrentScreen ,setMode}) {
   return (
     <div className="flex-1 p-6 bg-gray-50">
       {/* Top Cards */}
-      <div className="grid grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-2 gap-6 mb-8">
         {cards.map(card => {
           const Icon = { Brain, Target, Trophy }[card.icon];
           return (

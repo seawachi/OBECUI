@@ -2,13 +2,16 @@
 import React, { useState } from 'react';
 import { Play } from 'lucide-react';
 import kidney3D from '../assets/kidney_2.png';
+import Heart3D from '../assets/Heart-3d-model.jpg';
+import Lungs3D from '../assets/lungs.jpg';
+import Frog3D from '../assets/frog.jpg';
 
 const modes = ['Learning', 'Quiz'];
 const items = [
   { label: 'Kidney', imageSrc: kidney3D, description: 'Detailed 3D kidney anatomy.' },
-  { label: 'Heart',  imageSrc: kidney3D,  description: 'Explore the heart’s chambers.' },
-  { label: 'Lungs',  imageSrc: kidney3D,  description: 'Visualize breathing in AR.' },
-  { label: 'Frog',   imageSrc: kidney3D,   description: 'Study amphibian anatomy.' }
+  { label: 'Heart',  imageSrc: Heart3D,  description: 'Explore the heart’s chambers.' },
+  { label: 'Lungs',  imageSrc: Lungs3D,  description: 'Visualize breathing in AR.' },
+  { label: 'Frog',   imageSrc: Frog3D,   description: 'Study amphibian anatomy.' }
 ];
 
 export default function ARLauncher({ setCurrentScreen, setSidebarCollapsed, mode= modes[0]}) {

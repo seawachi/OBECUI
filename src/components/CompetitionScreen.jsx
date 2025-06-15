@@ -10,45 +10,7 @@ export default function CompetitionScreen({setCurrentScreen}) {
   return (
     <div className="flex-1 p-6 bg-gray-50">
       {/* Top Cards */}
-      <div className="grid grid-cols-2 gap-6 mb-8">
-        {/* Speed Challenge */}
-        <div className="relative bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 text-white overflow-hidden">
-          <Zap size={40} className="absolute top-8 left-8 text-orange-200 opacity-30" />
-          <div className="flex items-center justify-between mb-6 relative z-10">
-            <Zap size={40} className="text-orange-200" />
-            <div className="text-right">
-              <p className="text-orange-100 text-sm">Best Time</p>
-              <p className="text-2xl font-bold">1:23</p>
-            </div>
-          </div>
-          <h3 className="text-2xl font-semibold mb-2 relative z-10">Speed Challenge</h3>
-          <p className="text-orange-100 mb-6 relative z-10">
-            Race against time to identify kidney parts as fast as possible
-          </p>
-          <button className="relative z-10 bg-white text-orange-600 px-6 py-3 rounded-xl font-semibold hover:bg-orange-50 transition-colors">
-            Start Challenge
-          </button>
-        </div>
-
-        {/* Team Battle */}
-        <div className="relative bg-gradient-to-br from-blue-500 to-cyan-500 rounded-3xl p-8 text-white overflow-hidden">
-          <Users size={40} className="absolute top-8 left-8 text-blue-200 opacity-30" />
-          <div className="flex items-center justify-between mb-6 relative z-10">
-            <Users size={40} className="text-blue-200" />
-            <div className="text-right">
-              <p className="text-blue-100 text-sm">Team Score</p>
-              <p className="text-2xl font-bold">2,450</p>
-            </div>
-          </div>
-          <h3 className="text-2xl font-semibold mb-2 relative z-10">Team Battle</h3>
-          <p className="text-blue-100 mb-6 relative z-10">
-            Collaborate with classmates to solve complex anatomy challenges
-          </p>
-          <button onClick={() =>setCurrentScreen("party")} className="relative z-10 bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors">
-            Join Team
-          </button>
-        </div>
-      </div>
+      
 
       {/* Bottom Grid */}
       <div className="grid grid-cols-3 gap-6">

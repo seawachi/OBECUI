@@ -24,18 +24,18 @@ export const cards = [
     colorTo: 'green-600',
     detailLabel: 'Test your knowledge with AR-based challenges'
   },
-  {
-    id: 'compete-basic',
-    screen: 'compete',
-    mode: null,
-    title: 'Competition',
-    icon: 'Trophy',
-    progressLabel: 'Rank',
-    progressValue: '#3',
-    colorFrom: 'purple-500',
-    colorTo: 'purple-600',
-    detailLabel: 'Challenge friends in multiplayer AR battles'
-  }
+  // {
+  //   id: 'compete-basic',
+  //   screen: 'compete',
+  //   mode: null,
+  //   title: 'Competition',
+  //   icon: 'Trophy',
+  //   progressLabel: 'Rank',
+  //   progressValue: '#3',
+  //   colorFrom: 'purple-500',
+  //   colorTo: 'purple-600',
+  //   detailLabel: 'Challenge friends in multiplayer AR battles'
+  // }
 ];
 
 
