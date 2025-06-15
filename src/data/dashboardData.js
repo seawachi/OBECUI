@@ -8,8 +8,8 @@ export const cards = [
     icon: 'Brain',
     progressLabel: 'Progress',
     progressValue: '65%',
-    colorFrom: 'blue-500',
-    colorTo: 'blue-600',
+    colorFrom: 'from-blue-500',
+    colorTo: 'to-blue-600',
     detailLabel: 'Explore kidney anatomy with interactive AR guidance'
   },
   {
@@ -20,8 +20,8 @@ export const cards = [
     icon: 'Target',
     progressLabel: 'Best Score',
     progressValue: '94%',
-    colorFrom: 'green-500',
-    colorTo: 'green-600',
+    colorFrom: 'from-green-500',
+    colorTo: 'to-green-600',
     detailLabel: 'Test your knowledge with AR-based challenges'
   },
   // {

@@ -16,7 +16,7 @@ export default function DashboardScreen({ setCurrentScreen ,setMode}) {
                 setMode(card.mode ?? "Learning")
                 setCurrentScreen(card.screen)
               }}
-              className={`bg-gradient-to-br from-${card.colorFrom} to-${card.colorTo} rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all cursor-pointer group hover:scale-105`}
+              className={`bg-gradient-to-br ${card.colorFrom} ${card.colorTo} rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all cursor-pointer group hover:scale-105`}
             >
               <div className="flex items-center justify-between mb-4">
                 <Icon size={32} className={`text-${card.colorFrom}-200 group-hover:text-white transition-colors`} />
