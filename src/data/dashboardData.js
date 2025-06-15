@@ -27,7 +27,7 @@ export const cards = [
   {
     id: 'compete-basic',
     screen: 'compete',
-    mode: '',
+    mode: null,
     title: 'Competition',
     icon: 'Trophy',
     progressLabel: 'Rank',

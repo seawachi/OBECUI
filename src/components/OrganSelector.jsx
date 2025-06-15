@@ -11,7 +11,7 @@ const items = [
   { label: 'Frog',   imageSrc: kidney3D,   description: 'Study amphibian anatomy.' }
 ];
 
-export default function ARLauncher({ setCurrentScreen, setSidebarCollapsed, mode}) {
+export default function ARLauncher({ setCurrentScreen, setSidebarCollapsed, mode= modes[0]}) {
   const [activeMode, setActiveMode] = useState(mode);
   const [selected, setSelected] = useState(items[0]);
 

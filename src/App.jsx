@@ -16,7 +16,7 @@ function App() {
   const [quizScore, setQuizScore] = useState(0);
   const [currentQuizQuestion, setCurrentQuizQuestion] = useState(3);
   const [selectedPart, setSelectedPart] = useState(null);
-  const [mode, setMode] = useState("learning");
+  const [mode, setMode] = useState("Learning");
 
   const renderContent = () => {
     switch (currentScreen) {
