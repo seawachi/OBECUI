@@ -100,5 +100,6 @@ export default function ARLauncher({ setCurrentScreen, setSidebarCollapsed, mode
         </div>
       </div>
     </div>
+    
   );
 }

@@ -5,7 +5,7 @@ import { Menu, Home, Brain, Target, Trophy, Settings } from 'lucide-react';
 const navItems = [
   { id: 'home', icon: Home, label: 'Dashboard', color: 'text-blue-600' },
   { id: 'learning', icon: Brain, label: 'Learning Mode', color: 'text-green-600' },
-  { id: 'compete', icon: Trophy, label: 'Competition', color: 'text-purple-600' },
+  // { id: 'compete', icon: Trophy, label: 'Competition', color: 'text-purple-600' },
 ];
 
 export default function Sidebar({

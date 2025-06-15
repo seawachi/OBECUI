@@ -6,7 +6,7 @@ import {
   weeklyChallenges
 } from '../data/competitionData';
 
-export default function CompetitionScreen() {
+export default function CompetitionScreen({setCurrentScreen}) {
   return (
     <div className="flex-1 p-6 bg-gray-50">
       {/* Top Cards */}
@@ -44,7 +44,7 @@ export default function CompetitionScreen() {
           <p className="text-blue-100 mb-6 relative z-10">
             Collaborate with classmates to solve complex anatomy challenges
           </p>
-          <button className="relative z-10 bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors">
+          <button onClick={() =>setCurrentScreen("party")} className="relative z-10 bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors">
             Join Team
           </button>
         </div>

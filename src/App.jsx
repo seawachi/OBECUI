@@ -8,6 +8,7 @@ import CompetitionScreen from './components/CompetitionScreen';
 import ARLauncher from './components/OrganSelector';
 import ARLearning from './components/LearningScreen';
 import ARQuiz from './components/QuizScreen';
+import PartyScreen from './components/PartyScreen';
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState('home');
@@ -21,11 +22,13 @@ function App() {
   const renderContent = () => {
     switch (currentScreen) {
       case 'learning':
-        return (
-          <ARLauncher 
-          setCurrentScreen={setCurrentScreen}
-          setSidebarCollapsed = {setSidebarCollapsed}
-          mode={mode}/>
+        return (<>
+            <ARLauncher 
+            setCurrentScreen={setCurrentScreen}
+            setSidebarCollapsed = {setSidebarCollapsed}
+            mode={mode}/>
+            
+          </>
         );
       case 'ARLearning':
         return (
@@ -41,7 +44,11 @@ function App() {
           />
         );
       case 'compete':
-        return <CompetitionScreen />;
+        return <CompetitionScreen 
+        setCurrentScreen={setCurrentScreen}
+        />;
+      case 'party':
+        return <PartyScreen/>;
       default:
         return <DashboardScreen
         setCurrentScreen={setCurrentScreen}
@@ -55,6 +62,7 @@ function App() {
     learning: 'Learning Mode',
     quiz: 'Quiz Mode',
     compete: 'Competition',
+    party: 'Party',
   };
 
   
@@ -70,6 +78,8 @@ function App() {
       <div className="flex-1 flex flex-col">
         {!currentScreen.startsWith('AR') && ( <TopHeader
           title={titleMap[currentScreen]}
+          currentScreen={currentScreen}
+          
         />)}
         {renderContent()}
       </div>
